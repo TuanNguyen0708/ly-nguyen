@@ -3,12 +3,12 @@
 	-----------------------------------------------------------------------------------*/
 
 	$(window).on('load', function() {
-
 		"use strict";
 		// Load the page and wait 1s.
 	    $('#loader').delay( 1000 ).fadeOut('slow');	
-
 	});
+
+
 
 $(document).ready(function() {
 
@@ -48,8 +48,7 @@ $(document).ready(function() {
     		slides: [
     			{ src: "./img/portfolio_1.jpg" },
     			{ src: "./img/portfolio_2.jpg" },
-    			{ src: "./img/portfolio_3.jpg" },
-    			{ src: "./img/portfolio_4.jpg" }
+    			{ src: "./img/portfolio_3.jpg" }
     		]
     	});
     }
@@ -396,6 +395,7 @@ $(document).ready(function() {
 		}	   
 
 	});
+
 
 
 });
