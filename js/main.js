@@ -396,6 +396,4 @@ $(document).ready(function() {
 
 	});
 
-
-
 });

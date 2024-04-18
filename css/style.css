@@ -1988,3 +1988,219 @@ select.form-control:not([size]):not([multiple]) {
 .married-text h4 span:nth-child(11) { animation-delay: 1.55s; }
 .married-text h4 span:nth-child(12) { animation-delay: 1.6s; }
 .married-text h4 span:nth-child(13) { animation-delay: 1.65s; }
+
+.count-down-section {
+	position: relative;
+  }
+  
+  .count-down-section:before {
+	content: "";
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+  }
+  
+  .count-down-section h2 {
+	font-family: "Great Vibes", cursive;
+	font-size: 72px;
+	font-size: 4rem;
+	color: #fff;
+	margin: 0;
+  }
+  
+  @media (max-width: 1199px) {
+	.row {
+		display: block !important;
+	}
+	.col-md-offset-1 {
+		margin-left: 0 !important;
+	}
+	.col-md-7, .col-md-4 {
+		max-width: unset;
+	}
+	.count-down-section h2 {
+	  font-size: 62px;
+	  font-size: 3.44444rem;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	.count-down-section h2 {
+	  font-size: 50px;
+	  font-size: 2.77778rem;
+	}
+  }
+  
+  .count-down-section h2 > span {
+	font-size: 30px;
+	font-size: 1.66667rem;
+	display: block;
+	margin-bottom: 0.6em;
+  }
+  
+  @media (max-width: 1199px) {
+	.count-down-section h2 > span {
+	  font-size: 25px;
+	  font-size: 1.38889rem;
+	}
+  }
+  
+  @media (max-width: 767px) {
+	.count-down-section h2 > span {
+	  font-size: 20px;
+	  font-size: 1.11111rem;
+	}
+  }
+  
+  .count-down-section .count-down-clock {
+	margin-top: 13px;
+  }
+  
+  @media (max-width: 991px) {
+	.count-down-section .count-down-clock {
+	  margin-top: 35px;
+	}
+  }
+  
+  .count-down-section #clock {
+	color: #5e9a8e;
+	overflow: hidden;
+  }
+  
+  .count-down-section #clock > div {
+	background: rgba(255, 255, 255, 0.9);
+	width: 23.5%;
+	float: left;
+	text-align: center;
+	padding: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	-ms-border-radius: 5px;
+	border-radius: 5px;
+	border: 5px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 767px) {
+	.count-down-section #clock > div {
+	  width: calc(50% - 5px);
+	}
+  }
+  
+  .count-down-section #clock > div + div {
+	margin-left: 2%;
+  }
+  
+  @media (max-width: 767px) {
+	.count-down-section #clock > div + div {
+	  margin: 0;
+	}
+  }
+  
+  .count-down-section #clock > div:nth-child(2),
+  .count-down-section #clock > div:nth-child(4) {
+	margin: 0 0 10px 10px;
+  }
+  
+  .count-down-section #clock .box > div {
+	font-size: 40px;
+	font-size: 2.22222rem;
+	font-weight: 600;
+	line-height: 1em;
+  }
+  
+  @media (max-width: 1199px) {
+	.count-down-section #clock .box > div {
+	  font-size: 35px;
+	  font-size: 1.94444rem;
+	}
+  }
+  
+  @media (max-width: 991px) {
+	.count-down-section #clock .box > div {
+	  font-size: 30px;
+	  font-size: 1.66667rem;
+	  line-height: 1.3em;
+	}
+  }
+  
+  .count-down-section #clock .box span {
+	font-size: 14px;
+	font-size: 0.77778rem;
+	text-transform: uppercase;
+  }
+
+  /*** music box ***/
+.music-box {
+	position: fixed;
+	width: 300px;
+	height: 160px;
+	z-index: 120;
+	bottom: 30px;
+	left: 30px;
+  }
+  
+  @media (max-width: 991px) {
+	.music-box {
+	  width: 250px;
+	  height: 120px;
+	  right: auto;
+	  left: 30px;
+	}
+  }
+  
+  .music-box .music-holder {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: -30px;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+  }
+  
+  .music-box .music-holder iframe {
+	width: 100%;
+	height: 100%;
+  }
+  
+  .music-box button {
+	display: flex;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	line-height: 37px;
+	font-size: 18px;
+	font-size: 1rem;
+	color: #5e9a8e;
+	border: 1px solid #e6e6e6;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	bottom: 0;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+  }
+  
+  @media (max-width: 991px) {
+	.music-box button {
+	  right: auto;
+	  left: 0;
+	}
+  }
+  
+  .music-box .toggle-music-box {
+	top: -50px;
+	visibility: visible;
+	opacity: 1;
+  }
