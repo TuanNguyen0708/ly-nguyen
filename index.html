@@ -167,39 +167,18 @@
 							<a class="nav-link" href="#story">Story</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#blog">Blog</a>
+							<a class="nav-link" href="#birthday">BirthDay</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#people">People</a>
+							<a class="nav-link" href="#family">Family</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#portfolio">Portfolio</a>
+							<a class="nav-link" href="#portfolio">Gallery</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#event">Event</a>
+							<a class="nav-link" href="#map">Map</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#gift">Gift</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#footer">RSVP</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Pages
-							</a>
-							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="blog-right-sidebar.html">Blog Right Sidebar</a>
-								<a class="dropdown-item" href="blog-left-sidebar.html">Blog Left Sidebar</a>
-								<a class="dropdown-item" href="blog-full-width.html">Blog Full Width</a>
-								<a class="dropdown-item" href="blog-single-post-full.html">Blog Single Post Full</a>
-								<a class="dropdown-item" href="blog-single-post.html">Blog Single Post</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="boxed-layout.html">Box Layout</a>
-								<a class="dropdown-item" href="video-background.html">Video background</a>
-							</div>
-						</li>
+
 					</ul>
 				</div>
 			</div>
@@ -461,7 +440,8 @@
 	<!-- Story Section  End -->
 
 	<!-- start count-down-section -->
-	<section class="count-down-section section-padding parallax" data-bg-image="images/countdown-bg.jpg" data-speed="7">
+	<section id="birthday" class="count-down-section section-padding parallax" data-bg-image="images/countdown-bg.jpg"
+		data-speed="7">
 		<div class="container">
 			<div class="row">
 				<div class="col col-md-4">
@@ -481,7 +461,7 @@
 
 
 	<!-- People Section -->
-	<section id="people">
+	<section id="family">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
@@ -543,78 +523,103 @@
 			<div class="no-margin">
 				<div class="button-group filters-button-group margin-b-4">
 					<button class="button is-checked" data-filter="*">All</button>
-					<button class="button" data-filter=".wedding">Wedding</button>
 					<button class="button" data-filter=".me">Me</button>
-					<button class="button" data-filter=".videos">Videos</button>
+					<button class="button" data-filter=".family">Family</button>
+					<button class="button" data-filter=".friend">Friend</button>
 				</div>
 			</div>
-			
+
 			<!-- Portfolio Images -->
 			<div class="row grid" id="portfolioGrid">
 			</div>
 		</div>
-		
+
 		<script>
-			document.addEventListener("DOMContentLoaded", function() {
+			document.addEventListener("DOMContentLoaded", function () {
 				const images = [
+					{ src: "img/portfolio_33.jpg", category: "family" },
+					{ src: "img/portfolio_48.jpg", category: "friend" },
+					{ src: "img/portfolio_49.jpg", category: "friend" },
+					{ src: "img/portfolio_50.jpg", category: "friend" },
+					{ src: "img/portfolio_51.jpg", category: "friend" },
+					{ src: "img/portfolio_34.jpg", category: "family" },
 					{ src: "img/portfolio_1.jpg", category: "me" },
 					{ src: "img/portfolio_2.jpg", category: "me" },
 					{ src: "img/portfolio_3.jpg", category: "me" },
 					{ src: "img/portfolio_4.jpg", category: "me" },
+					{ src: "img/portfolio_38.jpg", category: "family" },
+
 					{ src: "img/portfolio_5.jpg", category: "me" },
 					{ src: "img/portfolio_6.jpg", category: "me" },
 					{ src: "img/portfolio_8.jpg", category: "me" },
 					{ src: "img/portfolio_9.jpg", category: "me" },
-					{ src: "img/portfolio_10.jpg", category: "me" },
-					{ src: "img/portfolio_11.jpg", category: "me" },
-					{ src: "img/portfolio_12.jpg", category: "me" },
-					{ src: "img/portfolio_13.jpg", category: "me" },
+
 					{ src: "img/portfolio_14.jpg", category: "me" },
 					{ src: "img/portfolio_15.jpg", category: "me" },
+					{ src: "img/portfolio_46.jpg", category: "friend" },
+					{ src: "img/portfolio_47.jpg", category: "friend" },
 					{ src: "img/portfolio_16.jpg", category: "me" },
 					{ src: "img/portfolio_17.jpg", category: "me" },
+					{ src: "img/portfolio_44.jpg", category: "friend" },
+
 					{ src: "img/portfolio_18.jpg", category: "me" },
 					{ src: "img/portfolio_19.jpg", category: "me" },
 					{ src: "img/portfolio_20.jpg", category: "me" },
+					{ src: "img/portfolio_37.jpg", category: "family" },
+					{ src: "img/portfolio_39.jpg", category: "family" },
 					{ src: "img/portfolio_21.jpg", category: "me" },
 					{ src: "img/portfolio_22.jpg", category: "me" },
 					{ src: "img/portfolio_23.jpg", category: "me" },
+					{ src: "img/portfolio_43.jpg", category: "friend" },
+					{ src: "img/portfolio_45.jpg", category: "friend" },
 					{ src: "img/portfolio_24.jpg", category: "me" },
 					{ src: "img/portfolio_25.jpg", category: "me" },
+					{ src: "img/portfolio_52.jpg", category: "family" },
+					{ src: "img/portfolio_54.jpg", category: "family" },
 					{ src: "img/portfolio_26.jpg", category: "me" },
 					{ src: "img/portfolio_27.jpg", category: "me" },
 					{ src: "img/portfolio_28.jpg", category: "me" },
 					{ src: "img/portfolio_29.jpg", category: "me" },
+					{ src: "img/portfolio_53.jpg", category: "family" },
 					{ src: "img/portfolio_30.jpg", category: "me" },
 					{ src: "img/portfolio_31.jpg", category: "me" },
 					{ src: "img/portfolio_32.jpg", category: "me" },
+					{ src: "img/portfolio_35.jpg", category: "family" },
+					{ src: "img/portfolio_36.jpg", category: "family" },
+					{ src: "img/portfolio_40.jpg", category: "family" },
+					{ src: "img/portfolio_10.jpg", category: "me" },
+					{ src: "img/portfolio_11.jpg", category: "me" },
+					{ src: "img/portfolio_12.jpg", category: "me" },
+					{ src: "img/portfolio_13.jpg", category: "me" },
+					{ src: "img/portfolio_41.jpg", category: "friend" },
+					{ src: "img/portfolio_42.jpg", category: "friend" },
 				];
-		
+
 				const portfolioGrid = document.getElementById("portfolioGrid");
-		
-				images.forEach(function(image) {
+
+				images.forEach(function (image) {
 					const gridItem = document.createElement("div");
 					gridItem.classList.add("grid-item", "popup-gallery", "col-lg-3", "col-md-6", "col-sm-12", image.category, "transition");
 					gridItem.setAttribute("data-category", "transition");
-		
+
 					const item = document.createElement("div");
 					item.classList.add("item");
-		
+
 					const anchor = document.createElement("a");
 					anchor.href = image.src;
-		
+
 					const thumbnailOverlay = document.createElement("div");
 					thumbnailOverlay.classList.add("thumbnail-overlay");
-		
+
 					const img = document.createElement("img");
 					img.classList.add("img-fluid");
 					img.src = image.src;
 					img.alt = "";
-		
+
 					const thumbnailTitle = document.createElement("span");
 					thumbnailTitle.classList.add("thumbnail-title");
 					thumbnailTitle.innerHTML = '<i class="fa fa-search-plus"></i>';
-		
+
 					thumbnailOverlay.appendChild(img);
 					thumbnailOverlay.appendChild(thumbnailTitle);
 					anchor.appendChild(thumbnailOverlay);
@@ -623,21 +628,26 @@
 					portfolioGrid.appendChild(gridItem);
 				});
 			});
-		</script>		
-		
+		</script>
+
 	</section>
 	<!-- Portfolio Section End -->
 
 
 	<!-- Google Map Full Width Section -->
-	<div id="map"></div>
+	<div id="map" style="padding: 0 10px;">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d496.18348112164887!2d108.22023641534254!3d15.942637280856445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1713439441911!5m2!1svi!2s"
+			width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+			referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
 
 	<!-- Footer Bottom -->
 	<div id="footer-bottom">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 justify-content-center d-flex">
-					<p>TuanNguyen From With Love</p>
+					<p style="font-family: Great Vibes, cursive; font-size: 20px;">From TuanNguyen With Love</p>
 				</div>
 			</div>
 		</div>
@@ -675,84 +685,6 @@
 
 	<!-- Theme Sett -->
 	<script src="js/main.js"></script>
-
-	<!-- Google Map Settings-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNCHlE_T0Y6N_ZQcR2LhfQ1mnhGiRFVPU"></script>
-	<script>
-
-		// Add the map center coordinate
-		var center = { lat: 15.942670, lng: 108.220004 };
-
-		var map = new google.maps.Map(document.getElementById('map'),
-			{
-				zoom: 15,
-				center: center
-			}
-		);
-
-		function addMarker(markers) {
-
-			var marker = new google.maps.Marker({
-				position: markers.coordinate,
-				map: map,
-				label: markers.number,
-				animation: google.maps.Animation.DROP,
-				icon: markers.icon
-			})
-
-			var infowindow = new google.maps.InfoWindow({
-				content: markers.infowindow
-			});
-
-
-			marker.addListener('click', function () {
-				infowindow.open(map, marker);
-			});
-
-
-		}
-
-		// Add the markers to the Map
-		addMarker({
-			coordinate: { lat: 40.815182, lng: -74.238908 },
-			infowindow: '<div id="content">' +
-				'<h4 class="font-weight-light"><span class="custom-color">First</span> Point</h4>' +
-				'<div class="map-info-content">' +
-				'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>' +
-				'</div>' +
-				'</div>',
-			icon: "img/map_marker.png",
-
-
-
-		});
-
-		addMarker({
-			coordinate: { lat: 40.815496, lng: -74.225912 },
-			infowindow: '<div id="content">' +
-				'<h4 class="font-weight-light"><span class="custom-color">Second</span> Point</h4>' +
-				'<div class="map-info-content">' +
-				'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>' +
-				'</div>' +
-				'</div>',
-			icon: "img/map_marker.png",
-		});
-
-		addMarker({
-			coordinate: { lat: 40.812987, lng: -74.245466 },
-			infowindow: '<div id="content">' +
-				'<h4 class="font-weight-light"><span class="custom-color">Third</span> Point</h4>' +
-				'<div class="map-info-content">' +
-				'<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vitae, minima blanditiis inventore ea eum?</p>' +
-				'</div>' +
-				'</div>',
-			icon: "img/map_marker.png",
-		});
-
-
-	</script>
-
-	<!-- Google Map Settings End -->
 
 </body>
 

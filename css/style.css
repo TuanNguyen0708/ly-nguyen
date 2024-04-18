@@ -1975,19 +1975,19 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 /* Áp dụng delay cho từng chữ cái */
-.married-text h4 span:nth-child(1) { animation-delay: 1.05s; }
-.married-text h4 span:nth-child(2) { animation-delay: 1.10s; }
-.married-text h4 span:nth-child(3) { animation-delay: 1.15s; }
-.married-text h4 span:nth-child(4) { animation-delay: 1.20s; }
-.married-text h4 span:nth-child(5) { animation-delay: 1.25s; }
-.married-text h4 span:nth-child(6) { animation-delay: 1.30s; }
-.married-text h4 span:nth-child(7) { animation-delay: 1.35s; }
-.married-text h4 span:nth-child(8) { animation-delay: 1.40s; }
-.married-text h4 span:nth-child(9) { animation-delay: 1.45s; }
-.married-text h4 span:nth-child(10) { animation-delay: 1.50s; }
-.married-text h4 span:nth-child(11) { animation-delay: 1.55s; }
-.married-text h4 span:nth-child(12) { animation-delay: 1.6s; }
-.married-text h4 span:nth-child(13) { animation-delay: 1.65s; }
+.married-text h4 span:nth-child(1) { animation-delay: 2.05s; }
+.married-text h4 span:nth-child(2) { animation-delay: 2.10s; }
+.married-text h4 span:nth-child(3) { animation-delay: 2.15s; }
+.married-text h4 span:nth-child(4) { animation-delay: 2.20s; }
+.married-text h4 span:nth-child(5) { animation-delay: 2.25s; }
+.married-text h4 span:nth-child(6) { animation-delay: 2.30s; }
+.married-text h4 span:nth-child(7) { animation-delay: 2.35s; }
+.married-text h4 span:nth-child(8) { animation-delay: 2.40s; }
+.married-text h4 span:nth-child(9) { animation-delay: 2.45s; }
+.married-text h4 span:nth-child(10) { animation-delay: 2.50s; }
+.married-text h4 span:nth-child(11) { animation-delay: 2.55s; }
+.married-text h4 span:nth-child(12) { animation-delay: 2.6s; }
+.married-text h4 span:nth-child(13) { animation-delay: 2.65s; }
 
 .count-down-section {
 	position: relative;
