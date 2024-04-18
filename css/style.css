@@ -544,6 +544,12 @@ footer h2 {
 .story-img-2{ background: url("../img/story_2.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
 .story-img-3{ background: url("../img/story_3.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
 .story-img-4{ background: url("../img/story_4.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
+.story-img-5{ background: url("../img/story_5.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
+.story-img-6{ background: url("../img/story_6.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
+.story-img-7{ background: url("../img/story_7.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
+.story-img-8{ background: url("../img/story_8.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
+.story-img-9{ background: url("../img/story_9.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
+.story-img-10{ background: url("../img/story_10.jpg") no-repeat scroll center center / cover rgba(0, 0, 0, 0); }
 
 .story-img {
 	height: 14rem;
@@ -553,7 +559,13 @@ footer h2 {
 .story-img-1,
 .story-img-2,
 .story-img-3,
-.story-img-4 {
+.story-img-4,
+.story-img-5,
+.story-img-6,
+.story-img-7,
+.story-img-8,
+.story-img-9,
+.story-img-10 {
 	height: 17rem;
     width: 100%;
 	border-radius: 3px;
